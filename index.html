@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <!-- BASIC -->
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    Veloura Dining | Luxury Restaurant Experience
+  </title>
+
+  <meta
+    name="description"
+    content="Experiencia gastronómica premium con diseño cinematográfico, cocina de autor y atmósfera luxury."
+  />
+
+  <meta
+    name="keywords"
+    content="luxury restaurant, fine dining, premium restaurant, cinematic dining, luxury experience"
+  />
+
+  <meta
+    name="author"
+    content="Veloura Dining"
+  />
+
+  <meta
+    name="robots"
+    content="index, follow"
+  />
+
+  <!-- THEME -->
+
+  <meta
+    name="theme-color"
+    content="#0B0B0B"
+  />
+
+  <!-- OPEN GRAPH -->
+
+  <meta
+    property="og:type"
+    content="website"
+  />
+
+  <meta
+    property="og:title"
+    content="Veloura Dining | Luxury Restaurant Experience"
+  />
+
+  <meta
+    property="og:description"
+    content="Fine dining reimagined with cinematic atmosphere and luxury design."
+  />
+
+  <meta
+    property="og:image"
+    content="./assets/images/og-cover.jpg"
+  />
+
+  <meta
+    property="og:url"
+    content="https://veloura.vercel.app"
+  />
+
+  <!-- TWITTER -->
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  />
+
+  <meta
+    name="twitter:title"
+    content="Veloura Dining"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Luxury cinematic restaurant experience."
+  />
+
+  <meta
+    name="twitter:image"
+    content="./assets/images/og-cover.jpg"
+  />
+
+  <!-- FAVICON -->
+
+  <link
+    rel="icon"
+    href="./assets/images/favicon.png"
+  />
+
+  <!-- PRELOAD -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <!-- FONTS -->
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- TAILWIND -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- GSAP -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- LENIS -->
+
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+  <!-- CSS -->
+
+  <link
+    rel="stylesheet"
+    href="./css/style.css"
+  />
+
+  <!-- SCHEMA -->
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Restaurant",
+    "name":"Veloura Dining",
+    "image":"./assets/images/og-cover.jpg",
+    "description":"Luxury cinematic restaurant experience.",
+    "servesCuisine":"Fine Dining",
+    "priceRange":"$$$$",
+    "telephone":"+54 11 0000 0000",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Buenos Aires",
+      "addressCountry":"AR"
+    }
+  }
+  </script>
+
+</head>
+
+<body class="bg-[#0B0B0B] text-white overflow-x-hidden">
+
+  <!-- PARTICLES -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- GLOBAL BACKGROUND -->
+
+  <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+
+    <div class="absolute top-[-250px] left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-[#8B5CF6]/10 blur-[220px] rounded-full"></div>
+
+    <div class="absolute top-[40%] left-[-300px] w-[700px] h-[700px] bg-[#7C3AED]/10 blur-[180px] rounded-full"></div>
+
+    <div class="absolute bottom-[-250px] right-[-200px] w-[800px] h-[800px] bg-[#8B5CF6]/10 blur-[220px] rounded-full"></div>
+
+    <div class="noise"></div>
+
+  </div>
+
+  <!-- CURSOR GLOW -->
+
+  <div id="cursor-glow"></div>
+
+
+  <!-- COMPONENTS -->
+
+  <div data-component="loader"></div>
+
+  <div data-component="navbar"></div>
+
+  <div data-component="hero"></div>
+
+  <div data-component="marquee"></div>
+  
+  <div data-component="cinematic-transition"></div>
+  
+  <div data-component="tasting-menu"></div>
+
+  <div data-component="menu"></div>
+
+  <div data-component="experience"></div>
+
+  <div data-component="chef"></div>
+
+  <div data-component="awards"></div>
+
+  <div data-component="gallery"></div>
+
+  <div data-component="editorial"></div>
+
+  <div data-component="social-proof"></div>
+  
+  <div data-component="testimonials"></div>
+
+  <div data-component="reservations"></div>
+  
+  <div data-component="private-events"></div>
+  
+  <div data-component="location"></div>
+
+  <div data-component="faq"></div>
+
+  <div data-component="final-cta"></div>
+
+  <div data-component="footer"></div>
+
+  <!-- JS -->
+
+  <script src="./js/main.js"></script>
+
+</body>
+</html>
