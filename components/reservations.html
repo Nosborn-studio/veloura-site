@@ -1,0 +1,283 @@
+<section
+  id="reservas"
+  class="relative py-40 overflow-hidden">
+
+  <!-- BACKGROUND GLOWS -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute left-[-260px] top-20 w-[720px] h-[720px] bg-[#8B5CF6]/10 blur-[220px] rounded-full"></div>
+    <div class="absolute right-[-260px] bottom-0 w-[620px] h-[620px] bg-[#4C1D95]/10 blur-[220px] rounded-full"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+      <!-- LEFT -->
+      <div>
+
+        <span class="text-[#A855F7] uppercase tracking-[0.35em] text-xs font-semibold">
+          Reservations
+        </span>
+
+        <h2 class="serif mobile-section-title text-6xl lg:text-8xl leading-[0.92] mt-8 mb-10">
+          Reservá una experiencia diseñada para impresionar.
+        </h2>
+
+        <p class="text-white/60 text-xl leading-relaxed mb-10">
+          Elegí un día y horario disponible. El restaurante recibirá la solicitud por WhatsApp con todos los datos y una respuesta sugerida para confirmar la reserva.
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-5 mb-10">
+
+          <div class="glass rounded-[30px] p-7 card-hover">
+            <span class="text-[#C4A3FF] uppercase tracking-[0.25em] text-[10px] font-semibold">
+              Available Days
+            </span>
+
+            <h3 class="text-2xl font-bold mt-4 mb-3">
+              Jueves a domingo
+            </h3>
+
+            <p class="text-white/50 leading-relaxed">
+              Turnos limitados para mantener una experiencia exclusiva.
+            </p>
+          </div>
+
+          <div class="glass rounded-[30px] p-7 card-hover">
+            <span class="text-[#C4A3FF] uppercase tracking-[0.25em] text-[10px] font-semibold">
+              Confirmation
+            </span>
+
+            <h3 class="text-2xl font-bold mt-4 mb-3">
+              Vía WhatsApp
+            </h3>
+
+            <p class="text-white/50 leading-relaxed">
+              El local confirma manualmente disponibilidad y registra el turno.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- FORM -->
+      <div class="relative">
+
+        <div class="absolute inset-0 bg-[#8B5CF6]/10 blur-[120px] rounded-full"></div>
+
+        <div class="relative glass rounded-[46px] p-8 lg:p-10 card-hover">
+
+          <div class="mb-8">
+
+            <span class="text-[#C4A3FF] uppercase tracking-[0.3em] text-[10px] font-bold">
+              Reservation Details
+            </span>
+
+            <h3 class="serif text-4xl mt-4">
+              Diseñemos tu noche perfecta.
+            </h3>
+
+            <p class="text-white/50 leading-relaxed mt-4">
+              Seleccioná país, WhatsApp, día disponible, horario y tipo de experiencia.
+            </p>
+
+          </div>
+
+          <form
+            id="reservation-form"
+            class="space-y-5">
+
+            <div>
+
+              <label class="block text-white/45 text-sm mb-3">
+                Nombre completo
+              </label>
+
+              <input
+                id="res-name"
+                type="text"
+                placeholder="Tu nombre"
+                required
+                class="w-full bg-white/[0.04] border border-white/10 rounded-2xl px-5 py-4 text-white placeholder:text-white/25 outline-none focus:border-[#8B5CF6]/60 transition">
+
+            </div>
+
+            <div>
+
+              <label class="block text-white/45 text-sm mb-3">
+                WhatsApp
+              </label>
+
+              <div class="grid grid-cols-[150px_1fr] gap-3">
+
+                <select
+                  id="res-country-code"
+                  required
+                  class="w-full bg-[#111111] border border-white/10 rounded-2xl px-4 py-4 text-white outline-none focus:border-[#8B5CF6]/60 transition">
+
+                  <option value="54">🇦🇷 +54 Argentina</option>
+                  <option value="1">🇺🇸 +1 Estados Unidos</option>
+                  <option value="1">🇨🇦 +1 Canadá</option>
+                  <option value="52">🇲🇽 +52 México</option>
+                  <option value="34">🇪🇸 +34 España</option>
+                  <option value="44">🇬🇧 +44 Reino Unido</option>
+                  <option value="55">🇧🇷 +55 Brasil</option>
+                  <option value="56">🇨🇱 +56 Chile</option>
+                  <option value="57">🇨🇴 +57 Colombia</option>
+                  <option value="51">🇵🇪 +51 Perú</option>
+                  <option value="598">🇺🇾 +598 Uruguay</option>
+                  <option value="595">🇵🇾 +595 Paraguay</option>
+                  <option value="591">🇧🇴 +591 Bolivia</option>
+                  <option value="593">🇪🇨 +593 Ecuador</option>
+                  <option value="58">🇻🇪 +58 Venezuela</option>
+                  <option value="39">🇮🇹 +39 Italia</option>
+                  <option value="33">🇫🇷 +33 Francia</option>
+                  <option value="49">🇩🇪 +49 Alemania</option>
+                  <option value="351">🇵🇹 +351 Portugal</option>
+                  <option value="971">🇦🇪 +971 Emiratos Árabes</option>
+
+                </select>
+
+                <input
+                  id="res-phone"
+                  type="tel"
+                  placeholder="11 1234 5678"
+                  required
+                  class="w-full bg-white/[0.04] border border-white/10 rounded-2xl px-5 py-4 text-white placeholder:text-white/25 outline-none focus:border-[#8B5CF6]/60 transition">
+
+              </div>
+
+              <p class="text-white/30 text-xs mt-3">
+                Seleccioná tu país y escribí tu número sin el código internacional.
+              </p>
+
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-5">
+
+              <div>
+
+                <label class="block text-white/45 text-sm mb-3">
+                  Día disponible
+                </label>
+
+                <select
+                  id="res-day"
+                  required
+                  class="w-full bg-[#111111] border border-white/10 rounded-2xl px-5 py-4 text-white outline-none focus:border-[#8B5CF6]/60 transition">
+
+                  <option value="">Seleccionar día</option>
+                  <option value="Lunes">Lunes</option>
+                  <option value="Martes">Martes</option>
+                  <option value="Miercoles">Miercoles</option>
+                  <option value="Jueves">Jueves</option>
+                  <option value="Viernes">Viernes</option>
+                  <option value="Sábado">Sábado</option>
+                  <option value="Domingo">Domingo</option>
+
+                </select>
+
+              </div>
+
+              <div>
+
+                <label class="block text-white/45 text-sm mb-3">
+                  Horario disponible
+                </label>
+
+                <select
+                  id="res-time"
+                  required
+                  class="w-full bg-[#111111] border border-white/10 rounded-2xl px-5 py-4 text-white outline-none focus:border-[#8B5CF6]/60 transition">
+
+                  <option value="">Seleccionar horario</option>
+                  <option value="19:00">19:00</option>
+                  <option value="20:30">20:30</option>
+                  <option value="22:00">22:00</option>
+
+                </select>
+
+              </div>
+
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-5">
+
+              <div>
+
+                <label class="block text-white/45 text-sm mb-3">
+                  Invitados
+                </label>
+
+                <input
+                  id="res-guests"
+                  type="number"
+                  min="1"
+                  max="12"
+                  placeholder="2"
+                  required
+                  class="w-full bg-white/[0.04] border border-white/10 rounded-2xl px-5 py-4 text-white placeholder:text-white/25 outline-none focus:border-[#8B5CF6]/60 transition">
+
+              </div>
+
+              <div>
+
+                <label class="block text-white/45 text-sm mb-3">
+                  Experiencia
+                </label>
+
+                <select
+                  id="res-experience"
+                  required
+                  class="w-full bg-[#111111] border border-white/10 rounded-2xl px-5 py-4 text-white outline-none focus:border-[#8B5CF6]/60 transition">
+
+                  <option>Menú degustación</option>
+                  <option>Wine pairing</option>
+                  <option>Chef’s table</option>
+                  <option>Evento privado</option>
+
+                </select>
+
+              </div>
+
+            </div>
+
+            <div>
+
+              <label class="block text-white/45 text-sm mb-3">
+                Mensaje opcional
+              </label>
+
+              <textarea
+                id="res-message"
+                rows="4"
+                placeholder="Contanos detalles de tu reserva"
+                class="w-full bg-white/[0.04] border border-white/10 rounded-2xl px-5 py-4 text-white placeholder:text-white/25 outline-none focus:border-[#8B5CF6]/60 transition resize-none"></textarea>
+
+            </div>
+
+            <button
+              id="reservation-submit"
+              type="submit"
+              class="magnetic w-full bg-[#8B5CF6] hover:bg-[#7C3AED] px-8 py-5 rounded-2xl font-black shadow-[0_20px_80px_rgba(139,92,246,.25)]">
+
+              Solicitar reserva
+
+            </button>
+
+            <p class="text-white/35 text-xs leading-relaxed text-center">
+              El local recibirá la solicitud por WhatsApp y podrá confirmar el turno con el mensaje sugerido.
+            </p>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
